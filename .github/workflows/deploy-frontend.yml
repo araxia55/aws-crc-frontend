@@ -40,3 +40,11 @@ jobs:
       # Step 6: Invalidate CF cache
       - name: Create CloudFront invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION_ID }} --paths "/*"
+      
+      # Step 7: Run front-end tests
+      - name: Cypress Tests
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+          browser: chrome
