@@ -49,7 +49,7 @@ jobs:
       
       - name: install pnpm
         run:
-          npm install -g pnpm --no-frozen-lockfile
+          pnpm install --no-frozen-lockfile
 
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
