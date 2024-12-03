@@ -50,8 +50,8 @@ jobs:
       - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v4
       
-      - name: Install & Build
-        run: pnpm i  &&  pnpm build
+      - name: pnpm build
+        run: pnpm build
 
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
