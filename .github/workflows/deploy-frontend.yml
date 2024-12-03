@@ -9,6 +9,7 @@ on:
       - 'release/**'
 
 jobs:
+
   deploy_job:
     runs-on: ubuntu-latest
     
@@ -39,8 +40,8 @@ jobs:
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION_ID }} --paths "/*"
       
   cypress_job:
-        runs-on: ubuntu-latest
-        
+    runs-on: ubuntu-latest
+
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         needs: deploy_job
