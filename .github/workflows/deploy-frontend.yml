@@ -12,7 +12,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     
-  checkout:
     steps:
       # Step 1: Checkout repository
       - name: Checkout
