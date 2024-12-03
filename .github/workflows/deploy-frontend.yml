@@ -49,13 +49,10 @@ jobs:
       
       - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v4
-      
-      - name: pnpm build
-        run: pnpm build
 
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
-          start: npm start
+          # build: npm run build
+          # start: npm start
           browser: chrome
