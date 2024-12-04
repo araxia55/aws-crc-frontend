@@ -53,7 +53,7 @@ jobs:
       - name: Install dependencies 🤙
         run: pnpm install --no-frozen-lockfile
 
-      -name: Install Cypress
+      - name: Install Cypress
         run: npm install cypress
 
       - name: Cypress Tests
