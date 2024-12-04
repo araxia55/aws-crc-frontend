@@ -53,6 +53,9 @@ jobs:
       - name: Install dependencies 🤙
         run: pnpm install --no-frozen-lockfile
 
+      -name: Install Cypress
+        run: npm install cypress
+
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
