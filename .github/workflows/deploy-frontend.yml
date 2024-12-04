@@ -60,6 +60,7 @@ jobs:
       - name: Install Cypress
         run: |
           npm install cypress
+          pnpm install --no-frozen-lockfile
 
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
