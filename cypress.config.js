@@ -2,11 +2,8 @@ import { defineConfig } from 'cypress'
 
 export default defineConfig({
   e2e: {
-    supportFile: false
+    supportFile: false,
+    // setup baseUrl for convenience
+    baseUrl: 'http://localhost:4321/', 
   }
 })
-
-// Setup baseUrl
-module.exports = {
-  baseUrl: 'http://localhost:4321/',
-};
