@@ -61,8 +61,8 @@ jobs:
       #   run: npm install cypress
 
       - name: Cypress Tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         with:
           build: npx run build
-          start: npm start
+          start: npx run start
           browser: chrome
