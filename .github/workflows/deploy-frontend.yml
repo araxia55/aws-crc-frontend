@@ -64,4 +64,4 @@ jobs:
         with:
           build: npx astro build
           start: npx astro preview
-          #browser: chrome
+          browser: chrome

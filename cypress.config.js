@@ -5,3 +5,8 @@ export default defineConfig({
     supportFile: false
   }
 })
+
+// Setup baseUrl
+module.exports = {
+  baseUrl: 'http://localhost:4321/',
+};
