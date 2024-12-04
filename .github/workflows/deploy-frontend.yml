@@ -60,6 +60,9 @@ jobs:
       # - name: Install Cypress
       #   run: npm install cypress
 
+      - name: setup node
+        uses: actions/setup-node@v2
+
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
