@@ -66,6 +66,6 @@ jobs:
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          build: npx run build
+          build: npx astro build
           start: npx run start
           browser: chrome
