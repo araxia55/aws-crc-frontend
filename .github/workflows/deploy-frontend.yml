@@ -54,10 +54,10 @@ jobs:
       - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Install dependencies 🤙
-        run: pnpm install --no-frozen-lockfile
+      # - name: Install dependencies 🤙
+      #   run: pnpm install --no-frozen-lockfile
 
-      - name: Install Cypress
+      - name: Install Cypress and dependencies 🤙
         run: |
           npm install cypress
           pnpm install --no-frozen-lockfile
