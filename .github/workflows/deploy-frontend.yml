@@ -50,13 +50,12 @@ jobs:
       - name: ⎔ Setup pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Install pnpm 🤙
-        run: pnpm install --no-frozen-lockfile
+      - name: Install dependencies 🤙
+        run: npm install -g pnpm --no-frozen-lockfile
 
       - name: Cypress Tests
         uses: cypress-io/github-action@v6
         with:
-          install: false
           # build: npm run build
           # start: npm start
           browser: chrome
