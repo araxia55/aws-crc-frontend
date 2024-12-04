@@ -64,5 +64,5 @@ jobs:
         uses: cypress-io/github-action@v3
         with:
           build: npx astro build
-          start: npx run start
+          start: npx astro preview
           browser: chrome
