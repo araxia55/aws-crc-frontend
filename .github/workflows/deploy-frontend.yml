@@ -58,8 +58,7 @@ jobs:
       - name: Install PNPM 🧑‍🏭
         run: | 
           cd ./frontend &&
-          rm -f package.json package-lock.json 
-          npm install
+          npm ci
 
       - name: Setup pnpm ☑️
         uses: pnpm/action-setup@v4
