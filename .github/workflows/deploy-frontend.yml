@@ -79,3 +79,6 @@ jobs:
           start: npx astro preview
           command-prefix: 'percy exec -- '
           command: npx cypress run
+          publish-summary: true
+          summary-title: 'website-portfolio-test'
+
