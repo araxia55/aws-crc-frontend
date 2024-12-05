@@ -28,17 +28,17 @@ jobs:
         run: 
           npm install
       
-      # - name: Build application 🛠️
-      #   run: 
-      #     npx astro build
+      - name: Build application 🛠️
+        run: 
+          cd ./frontend
+          npx astro build
 
-      - name: Build Astro site 🛠️
-        uses: withastro/action@v2
-        with:
-          path: './frontend'
-          build: true
-          start: true
-          buildCommand: npx astro build
+      # - name: Build Astro site 🛠️
+      #   uses: withastro/action@v2
+      #   with:
+      #     path: './frontend'
+      #     buildCommand: 'astro build --outDir dist'
+        
 
       - name: Deploy to S3 🚀
         run: 
