@@ -50,13 +50,14 @@ jobs:
     env:
       ACTIONS_RUNNER_DEBUG: true
       ACTIONS_STEP_DEBUG: true
+      pnpm-version: 'pnpm@latest'
 
     steps:
       - name: Checkout ☑️
         uses: actions/checkout@v4
       
-      # - name: Setup pnpm ☑️
-      #   uses: pnpm/action-setup@v4
+      - name: Setup pnpm ☑️
+        uses: pnpm/action-setup@v4
 
       - name: Install Cypress and dependencies 🤙
         run: |
