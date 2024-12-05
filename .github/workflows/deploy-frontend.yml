@@ -55,16 +55,15 @@ jobs:
       - name: Checkout ☑️
         uses: actions/checkout@v4
       
-      - name: Install PNPM 🧑‍🏭
+      # - name: Install PNPM 🧑‍🏭
+      #   run: | 
+      #     cd ./frontend &&
+      #     npm ci
+
+      - name: Install pnpm ☑️
         run: | 
           cd ./frontend &&
-          npm ci
-
-      - name: Install pnpm
-        run: npm install -g pnpm@latest
-
-      # - name: Setup pnpm ☑️
-      #   uses: pnpm/action-setup@v4
+          npm install -g pnpm@latest
 
       - name: Install Cypress and dependencies 🤙
         run: |
@@ -78,5 +77,5 @@ jobs:
           working-directory: './frontend'
           build: npx astro build
           start: npx astro preview
-          # command-prefix: 'percy exec -- '
+          command-prefix: 'percy exec -- '
           command: npx cypress run
