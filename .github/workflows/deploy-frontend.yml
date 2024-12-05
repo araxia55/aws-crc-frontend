@@ -29,8 +29,8 @@ jobs:
           npm install
       
       - name: Build application 🛠️
-        run: 
-          cd ./frontend
+        run: |
+          cd ./frontend &&
           npx astro build
 
       # - name: Build Astro site 🛠️
