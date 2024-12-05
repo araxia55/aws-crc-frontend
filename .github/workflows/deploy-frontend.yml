@@ -60,8 +60,11 @@ jobs:
           cd ./frontend &&
           npm ci
 
-      - name: Setup pnpm ☑️
-        uses: pnpm/action-setup@v4
+      - name: Install pnpm
+        run: npm install -g pnpm@latest
+
+      # - name: Setup pnpm ☑️
+      #   uses: pnpm/action-setup@v4
 
       - name: Install Cypress and dependencies 🤙
         run: |
