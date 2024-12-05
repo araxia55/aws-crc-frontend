@@ -58,6 +58,7 @@ jobs:
       - name: Install PNPM 🧑‍🏭
         run: | 
           cd ./frontend &&
+          rm -f package.json package-lock.json 
           npm install
 
       - name: Setup pnpm ☑️
