@@ -64,3 +64,7 @@ jobs:
         with:
           build: npx astro build
           start: npx astro preview
+      
+      - name: Run Cypress test
+        run: |
+          npx cypress run --config timeout=10000 --config
