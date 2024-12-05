@@ -54,11 +54,6 @@ jobs:
     steps:
       - name: Checkout ☑️
         uses: actions/checkout@v4
-      
-      # - name: Install PNPM 🧑‍🏭
-      #   run: | 
-      #     cd ./frontend &&
-      #     npm ci
 
       - name: Install pnpm ☑️
         run: | 
