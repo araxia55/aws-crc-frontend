@@ -58,7 +58,7 @@ jobs:
       - name: Setup pnpm ☑️
         uses: pnpm/action-setup@v4
         with:
-          version: ''
+          version: pnpm@9.12.2
 
       - name: Install Cypress and dependencies 🤙
         run: |
