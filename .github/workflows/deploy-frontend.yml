@@ -55,10 +55,11 @@ jobs:
       - name: Checkout ☑️
         uses: actions/checkout@v4
       
+      - name: Install PNPM 🧑‍🏭
+        run: pmpm -i --force
+
       - name: Setup pnpm ☑️
         uses: pnpm/action-setup@v4
-        with:
-          version: pnpm@9.12.2
 
       - name: Install Cypress and dependencies 🤙
         run: |
