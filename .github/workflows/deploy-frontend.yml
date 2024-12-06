@@ -1,6 +1,6 @@
 name: Deploy AWS CRC Front-end
 
-run-name: ${{ github.actor }} has pushed changes to the Main Branch
+run-name: ${{ github.actor }} has pushed changes to ${{ github.event.ref }}
 
 on:
   push:
