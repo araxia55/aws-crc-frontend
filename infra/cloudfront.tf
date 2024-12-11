@@ -60,9 +60,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   price_class = "PriceClass_200"
 
-  restrictions {
+ restrictions {
     geo_restriction {
-      restriction_type = "none"
+      restriction_type = "whitelist"
+      locations        = ["US", "CA", "AU", "NZ", "AU", "SG", "DE", "PH", "ES"]
     }
   }
 
