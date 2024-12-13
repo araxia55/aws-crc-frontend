@@ -4,15 +4,13 @@
 
 This is inspired by the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/).
 
+#### Frontend section:
+
 These are the Technology stack utlised to build this website:
 
 - HTML, Astro & Tailwind CSS
-- S3, Cloudfront, Route53
-- IAM Identity Center and Organizations
-- ACM (AWS Certificate Manager)
+- AWS S3, Cloudfront, Route53
 - Javascript
-- Dynamo DB
-- API Gateway
 - Terraform
 - Github Actions 
 
