@@ -57,6 +57,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     acm_certificate_arn = "arn:aws:acm:us-east-1:805627787874:certificate/b9b45f25-298c-4e6c-9ca8-7d55bb703e2e"
     ssl_support_method  = "sni-only"
   }
-
+    # cloudfront as an alias
     aliases = ["www.raymund.cloud"]
 }
