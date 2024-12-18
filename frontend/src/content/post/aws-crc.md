@@ -7,6 +7,7 @@ dateFormatted: Dec 5th, 2024
 
 ![Architecture](../../../public/assets/images/projects/aws_crc_architecture_diagram.png)
 
+
 ## **Introduction**
 <p style="text-align: justify;">
 The <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">The AWS Cloud Resume Challenge</a> was created by Forrest Brazeal, it's an inspiring project that encourages individual challengers to build a resume or portfolio website on cloud while utilising various services and best practices, providing a hands-on opportunity to showcase cloud skills.
