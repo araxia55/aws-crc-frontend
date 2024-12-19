@@ -18,8 +18,9 @@ locals {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    # domain_name = local.s3_website_domain_name
-    domain_name = "${aws_s3_bucket.aws_crc.bucket}.s3-website-us-east-1.amazonaws.com"
+    # website_endpoint (deprecated); bucket_regional_domain, etc.not working
+    # will need to figure out not to hardcode the s3 website origin 
+    domain_name = "my-aws-crc-5555.s3-website-us-east-1.amazonaws.com" 
     origin_id   = local.s3_origin_id
     custom_origin_config {
       origin_protocol_policy = "match-viewer"
