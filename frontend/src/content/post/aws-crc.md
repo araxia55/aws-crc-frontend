@@ -57,6 +57,7 @@ These are the high-level steps that was employed to build the frontend section.
     - Certificate Manager to secure communication using SSL/TLS certificate between applications and users.
 
 #### **Building the Backend**
+
 Now that I have a frontend, it's time to build the backend! I made these into a separate repository to have a clear separation of development workflow because they both require a different set of tools and frameworks including reducing future version control conflicts. This covers AWS serverless technologies, REST APIs, and source control. 
 
 These are the high-level steps that was employed to build the backend section.
@@ -66,6 +67,7 @@ These are the high-level steps that was employed to build the backend section.
 
 #### **frontend / Backend integration** 
 It's time to bring it all together! I've learn how to integrate the frontend and backend of the website including how to write simple Cypress smoke tests. The main objective of this section is to display the `visitor_counter` table in my website to keep track of the visitor tally. This can be implemented by a Python Lambda Function with an APIGW route using a POST method for eg. in Terraform that would be under the `aws_api_gateway_integration` resource.
+
 
 Provide examples and best practices for using these services in the context of the challenge.
 Compare the integration of AWS services to Jiu-Jitsu transitions, emphasizing the importance of fluidity, timing, and precision.
@@ -92,6 +94,7 @@ These are the high-level steps that was employed to build the automation and CI/
   The API is a public API, connected to *[raymund.cloud](https://www.raymund.cloud)*, which means it's accessible to anyone on the internet. As a result, anyone can find and make requests to the API directly without any authentication or authorization. To minimize some of this attack implementing a guardrail like *rate limiting* could be beneficial.
   
   **How to implement an API rate limit?**
+
   - This can be achieved in the resource for the API Gateway in your Terraform code.
 
   ```code
@@ -138,7 +141,7 @@ Also, it might be a good idea to disable ***AWS WAF*** (AWS Web Application Fire
 
 ### **Conclusion**
 
-This project will hopefully teach you to fail forward and be resilient whether it's figuring out how to handle the logic of the visitor counter tally in the backend, attempting to apply a CSS in the typing animation, or troubleshooting that dreaded **503, 400, and DNS_PROBE_ERR** it will surely give you a head to scratch. There is no secret sauce in completing this challenge I believe it's a matter of getting lost in the trenches and finding your way back in that stackoverflow tab that is hiding underneath 95 layers of my hoarded opened browser tabs. 
+This project will hopefully teach you to fail forward and be resilient whether it's figuring out how to handle the logic of the visitor counter tally in the backend, attempting to apply a CSS in the typing animation, or troubleshooting that dreaded **503, 400, and DNS_PROBE_ERR** it will surely give you a head to scratch. There is no secret sauce in completing this challenge I believe it's a matter of getting lost in the trenches and finding your way back in that stackoverflow tab that is hiding underneath 95 layers of my hoarded opened browser tabs.
 
 I would like to end this with my ethos of Ganbatte! or doing my best with what I have and taking on the difficulties head on and also being comfortable that failure is inevitable. That is why I think I've enjoyed tackling this project because it has enhanced and strengthened my mindset to grow on and off the grappling mats emphasizing the importance of discipline, perseverance, and Kaizen (continuous improvement).
 
@@ -149,3 +152,4 @@ Checkout this project in Github.
 - [Backend section](https://github.com/araxia55/aws-crc-backend)
 - [Portfolio website](https://www.raymund.cloud)
 </p>
+
