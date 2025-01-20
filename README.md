@@ -6,7 +6,7 @@ The architecture diagram above illustrates the workflow of this website it start
 
 1. Pushing a commit to the [aws-crc-frontend](https://github.com/araxia55/aws-crc-frontend) repo.
 2. The commits are picked up by Github Actions and triggers the appropriate workflow pipeline to build and deploy the infrastructure once this is completed it then moves into triggering another pipeline to test then deploy the *website* - [raymund.cloud](https://www.raymund.cloud).
-3. Before the commits are merged to `main` CodeQL triggers to scan vulnerabilities in the repository.
+3. Prior to merging commits to the `main` branch, `CodeQL` and `tfscan` scans are triggered to identify vulnerabilities within the repository. The results are then uploaded to the `Security` tab of the repository for further remediation.
 
 This is inspired by the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/).
 
@@ -16,7 +16,7 @@ Ray's Frontend website *(HTML/CSS/JavaScript with Tailwind CSS)* delivers conten
 
 ## How to install this theme using Astro ##
 
-1. run `npm install` then
+1. Setup [Astro](https://docs.astro.build/en/install-and-setup/).
 2. `npm create astro@latest -- --template araxia55/aws-crc-frontend`
 
 ## Source of Origin Template ##
